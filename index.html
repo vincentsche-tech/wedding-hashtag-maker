@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wedding Hashtag Generator – Free Punny &amp; Creative Hashtags</title>
+<meta name="description" content="Generate the perfect wedding hashtag for your big day. Funny puns, romantic ideas, and personalized hashtags based on your names — free, instant, copy &amp; share.">
+<!-- TODO: deploy - replace with real domain -->
+<link rel="canonical" href="https://weddinghashtagmaker.com/">
+<meta name="theme-color" content="#2c89a0">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%92%8D%3C/text%3E%3C/svg%3E">
+<!-- OG / social share (Pinterest / Facebook / Twitter) -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Wedding Hashtag Generator – Free &amp; Instant">
+<meta property="og:description" content="Turn your names into clever, romantic, or funny wedding hashtags in seconds. Free, no sign-up.">
+<meta property="og:url" content="https://weddinghashtagmaker.com/">
+<meta property="og:image" content="https://weddinghashtagmaker.com/og-cover.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Wedding Hashtag Generator – Free &amp; Instant">
+<meta name="twitter:description" content="Turn your names into clever, romantic, or funny wedding hashtags in seconds.">
+<meta name="twitter:image" content="https://weddinghashtagmaker.com/og-cover.png">
+<!-- Structured data (rich results) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Wedding Hashtag Generator",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Any",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "description": "Free tool that generates personalized, punny, romantic and classic wedding hashtags from your names."
+}
+</script>
+<!-- FAQ structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"What is a wedding hashtag?","acceptedAnswer":{"@type":"Answer","text":"A short, unique tag (like #WrightSaysIDo) that you and your guests add to photos on Instagram, Pinterest, and TikTok so every moment collects in one searchable place."}},
+    {"@type":"Question","name":"Are wedding hashtag generators free?","acceptedAnswer":{"@type":"Answer","text":"Yes — this tool is completely free, requires no sign-up, and works instantly in your browser."}},
+    {"@type":"Question","name":"Should my hashtag include my last name?","acceptedAnswer":{"@type":"Answer","text":"If you're taking or sharing a last name, including it usually produces the cleverest, most personalized puns. Leave it blank if you prefer first-name-only tags."}},
+    {"@type":"Question","name":"Can I use the same hashtag on Instagram and Pinterest?","acceptedAnswer":{"@type":"Answer","text":"Absolutely. The same tag works across Instagram, Pinterest, TikTok, and Facebook — consistency helps you gather every photo in one spot."}}
+  ]
+}
+</script>
+
+<style>
+  :root { --bg:#faf7f2; --card:#fff; --ink:#2d2a26; --muted:#8a8178; --accent:#2c89a0; --accent-dark:#247a8c; --gold:#c9a96e; --line:#ece5da; --radius:14px; --shadow:0 4px 20px rgba(45,42,38,.06); }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;}
+  header{background:#fff;border-bottom:1px solid var(--line);padding:16px 0;}
+  header .inner{max-width:900px;margin:0 auto;padding:0 20px;display:flex;align-items:center;gap:12px;flex-wrap:wrap;}
+  .logo{background:var(--ink);color:#fff;font-size:15px;font-weight:700;padding:6px 12px;border-radius:8px;letter-spacing:.3px;}
+  .tagline{color:var(--muted);font-size:13px;}
+  nav.topnav{margin-left:auto;display:flex;gap:14px;flex-wrap:wrap;}
+  nav.topnav a{color:var(--muted);font-size:13px;text-decoration:none;}
+  nav.topnav a:hover{color:var(--accent);}
+  main{max-width:900px;margin:0 auto;padding:32px 20px 60px;}
+  .hero{text-align:center;margin-bottom:28px;}
+  .hero h1{font-size:30px;font-weight:800;letter-spacing:-.5px;}
+  .hero p{color:var(--muted);margin-top:8px;font-size:15px;max-width:560px;margin-left:auto;margin-right:auto;}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:24px;margin-bottom:24px;}
+  .field-row{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;}
+  @media(max-width:640px){.field-row{grid-template-columns:1fr;}}
+  .field label{display:block;font-size:13px;font-weight:600;color:var(--muted);margin-bottom:6px;}
+  .field input{width:100%;padding:11px 14px;border:1px solid var(--line);border-radius:10px;font-size:16px;background:#fdfbf8;outline:none;transition:border-color .2s;}
+  .field input:focus{border-color:var(--accent);background:#fff;}
+  .field .hint{font-size:12px;color:var(--muted);margin-top:4px;}
+  .opt-group{margin-top:18px;}
+  .opt-group .label{font-size:13px;font-weight:600;color:var(--muted);margin-bottom:8px;}
+  .pills{display:flex;flex-wrap:wrap;gap:8px;}
+  .pill{border:1px solid var(--line);background:#fdfbf8;padding:8px 14px;border-radius:999px;font-size:14px;cursor:pointer;transition:all .15s;user-select:none;}
+  .pill:hover{border-color:var(--accent);}
+  .pill.active{background:var(--accent);border-color:var(--accent);color:#fff;}
+  .pill.vibe{font-size:13px;}
+  .btn-primary{display:block;width:100%;margin-top:20px;padding:14px;background:var(--accent);color:#fff;border:none;border-radius:12px;font-size:17px;font-weight:700;cursor:pointer;transition:background .2s;}
+  .btn-primary:hover{background:var(--accent-dark);}
+  .btn-primary.loading{background:var(--accent-dark);cursor:wait;}
+  .btn-ghost{display:inline-block;margin-top:12px;padding:8px 18px;background:transparent;border:1px solid var(--accent);color:var(--accent);border-radius:999px;font-size:14px;font-weight:600;cursor:pointer;transition:all .15s;}
+  .btn-ghost:hover{background:var(--accent);color:#fff;}
+  .preview-wrap{margin-bottom:20px;}
+  .preview{background:#14110f;border-radius:12px;padding:26px 18px;text-align:center;display:none;}
+  .preview .hashtag{font-size:26px;font-weight:800;color:#ffd9a0;text-shadow:0 0 18px rgba(255,200,120,.55),0 0 40px rgba(255,180,90,.25);letter-spacing:1px;word-break:break-word;}
+  .preview .sub{color:#9a918a;font-size:12px;margin-top:8px;}
+  .preview .cta{margin-top:12px;font-size:12px;color:var(--gold);}
+  .monetize{display:none;margin-top:14px;padding-top:14px;border-top:1px dashed var(--line);}
+  .monetize .m-line{font-size:14px;color:var(--ink);margin-bottom:8px;}
+  .monetize .m-line a{color:var(--accent);font-weight:600;text-decoration:none;}
+  .monetize .m-line a:hover{text-decoration:underline;}
+  .monetize .m-product{display:inline-block;background:#fdf6ea;border:1px solid var(--gold);color:var(--ink);padding:8px 14px;border-radius:10px;font-size:13px;text-decoration:none;font-weight:600;}
+  .monetize .m-product:hover{background:#f9ecd7;}
+  .result-group{margin-bottom:22px;}
+  .result-group h3{font-size:14px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:1px;margin-bottom:10px;display:flex;align-items:center;gap:8px;}
+  .result-group h3 .emoji{font-size:16px;}
+  .tag-list{display:flex;flex-wrap:wrap;gap:8px;}
+  .tag-item{display:inline-flex;align-items:center;gap:6px;background:#fdfbf8;border:1px solid var(--line);border-radius:999px;padding:6px 7px 6px 14px;font-size:14px;font-weight:600;color:var(--ink);cursor:pointer;transition:all .15s;}
+  .tag-item:hover{border-color:var(--accent);background:#fff;}
+  .tag-item .mini-btn{width:26px;height:26px;display:inline-flex;align-items:center;justify-content:center;border-radius:50%;font-size:12px;cursor:pointer;border:none;flex-shrink:0;transition:all .15s;}
+  .tag-item .copy-btn{background:var(--accent);color:#fff;}
+  .tag-item .copy-btn.copied{background:#4caf50;}
+  .tag-item .share-btn{background:#e8eef0;color:var(--accent);font-size:13px;}
+  .tag-item .share-btn:hover{background:var(--accent);color:#fff;}
+  .empty{text-align:center;color:var(--muted);padding:30px 10px;font-size:14px;}
+  .loading-wrap{display:none;text-align:center;padding:30px 10px;}
+  .spinner{width:40px;height:40px;border:4px solid var(--line);border-top-color:var(--accent);border-radius:50%;margin:0 auto 14px;animation:spin .8s linear infinite;}
+  @keyframes spin{to{transform:rotate(360deg);}}
+  .loading-wrap p{color:var(--muted);font-size:14px;}
+  footer{text-align:center;color:var(--muted);font-size:13px;padding:24px 0 40px;}
+  footer a{color:var(--accent);text-decoration:none;}
+  .toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(80px);background:var(--ink);color:#fff;padding:10px 22px;border-radius:999px;font-size:14px;opacity:0;transition:all .3s;pointer-events:none;z-index:99;}
+  .toast.show{opacity:1;transform:translateX(-50%) translateY(0);}
+  /* modal */
+  .modal-overlay{position:fixed;inset:0;background:rgba(30,25,20,.55);display:none;align-items:center;justify-content:center;z-index:100;padding:20px;}
+  .modal-overlay.show{display:flex;}
+  .modal{background:#fff;border-radius:18px;max-width:460px;width:100%;padding:30px 26px;text-align:center;position:relative;box-shadow:0 20px 60px rgba(0,0,0,.25);}
+  .modal .close-x{position:absolute;top:14px;right:16px;background:none;border:none;font-size:20px;color:var(--muted);cursor:pointer;}
+  .modal h2{font-size:20px;font-weight:800;margin-bottom:6px;}
+  .modal .m-sub{color:var(--muted);font-size:14px;margin-bottom:14px;}
+  .modal .bonus{background:var(--bg);border:1px dashed var(--gold);border-radius:12px;padding:12px;margin-bottom:16px;font-size:14px;font-weight:600;color:var(--ink);}
+  .modal .bonus .b-tag{display:inline-block;margin:3px 4px;}
+  .modal input{width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:10px;font-size:15px;margin-bottom:10px;outline:none;background:#fdfbf8;}
+  .modal input:focus{border-color:var(--accent);background:#fff;}
+  .modal .skip{margin-top:10px;font-size:12px;color:var(--muted);cursor:pointer;background:none;border:none;text-decoration:underline;}
+  .modal .done{padding:10px 0;}
+  .modal .done .heart{font-size:34px;margin-bottom:8px;}
+  /* SEO content */
+  .seo{max-width:900px;margin:0 auto;padding:0 20px 40px;}
+  .seo section{margin-bottom:30px;}
+  .seo h2{font-size:22px;font-weight:800;letter-spacing:-.3px;margin-bottom:12px;}
+  .seo h3{font-size:16px;font-weight:700;margin:16px 0 6px;color:var(--ink);}
+  .seo p,.seo li{color:#4a453f;font-size:15px;}
+  .seo ol,.seo ul{padding-left:22px;margin-top:6px;}
+  .seo li{margin-bottom:6px;}
+  .seo .style-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:12px;}
+  @media(max-width:640px){.seo .style-grid{grid-template-columns:1fr;}}
+  .seo .style-card{display:block;border:1px solid var(--line);border-radius:12px;padding:14px 16px;background:#fff;text-decoration:none;color:var(--ink);transition:all .15s;}
+  .seo .style-card:hover{border-color:var(--accent);box-shadow:var(--shadow);}
+  .seo .style-card b{color:var(--accent-dark);}
+  .seo .faq-item{border-bottom:1px solid var(--line);padding:12px 0;}
+  .seo .faq-item h3{margin:0 0 4px;}
+  .seo .faq-item p{margin:0;}
+  .seo .explore{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px;}
+  .seo .explore a{color:var(--accent);text-decoration:none;font-size:14px;border:1px solid var(--line);padding:6px 12px;border-radius:999px;}
+  .seo .explore a:hover{border-color:var(--accent);background:#fff;}
+</style>
+</head>
+<body>
+<header>
+  <div class="inner">
+    <div class="logo">💍 Hashtag Maker</div>
+    <div class="tagline">Say "I do" to the perfect wedding hashtag</div>
+    <!-- TODO: uncomment when inner pages are built -->
+    <!--
+    <nav class="topnav">
+      <a href="/funny-wedding-hashtags">Funny</a>
+      <a href="/romantic-wedding-hashtags">Romantic</a>
+      <a href="/wedding-hashtag-ideas">Ideas</a>
+      <a href="/best-wedding-hashtags">Best 2026</a>
+    </nav>
+    -->
+  </div>
+</header>
+
+<main>
+  <div class="hero">
+    <h1>Wedding Hashtag Generator</h1>
+    <p>Enter your names, pick a style — get clever puns, romantic lines, and classic tags made for you. Free &amp; instant.</p>
+  </div>
+
+  <div class="preview-wrap">
+    <div class="preview" id="preview">
+      <div class="hashtag" id="previewTag">#TheRightWrights</div>
+      <div class="sub">Neon welcome sign preview</div>
+      <div class="cta">✨ Like it? Custom neon signs &amp; welcome boards available soon</div>
+      <div class="monetize" id="monetize">
+        <div class="m-line">💡 Love this hashtag? <a href="#" id="etsyLink" onclick="return false;">Get a custom neon sign or welcome board with it on Etsy (10% off via our link)</a></div>
+        <a href="#" class="m-product" onclick="return false;">📋 Download our $4.99 Complete Wedding Planner &amp; Budget Tracker</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="field-row">
+      <div class="field">
+        <label for="bride">Partner 1's first name *</label>
+        <input type="text" id="bride" placeholder="e.g. Sherry (bride)" maxlength="20">
+      </div>
+      <div class="field">
+        <label for="groom">Partner 2's first name *</label>
+        <input type="text" id="groom" placeholder="e.g. John (groom)" maxlength="20">
+      </div>
+      <div class="field">
+        <label for="last">Future last name</label>
+        <input type="text" id="last" placeholder="e.g. Wright (great for puns!)" maxlength="20">
+        <div class="hint">Hint: last names unlock the best puns</div>
+      </div>
+    </div>
+
+    <div class="opt-group">
+      <div class="label">Style</div>
+      <div class="pills" id="tonePills">
+        <span class="pill active" data-tone="punny">😂 Punny &amp; Witty</span>
+        <span class="pill" data-tone="romantic">🥰 Romantic</span>
+        <span class="pill" data-tone="classic">🤵 Short &amp; Classic</span>
+        <span class="pill" data-tone="cute">🐻 Cute</span>
+      </div>
+    </div>
+
+    <div class="opt-group">
+      <div class="label">Your vibe (optional, mix &amp; match)</div>
+      <div class="pills" id="vibePills">
+        <span class="pill vibe" data-vibe="beach">🏖 Beach</span>
+        <span class="pill vibe" data-vibe="coffee">☕ Coffee</span>
+        <span class="pill vibe" data-vibe="cat">🐱 Cat Lovers</span>
+        <span class="pill vibe" data-vibe="dog">🐶 Dog Lovers</span>
+        <span class="pill vibe" data-vibe="wine">🍷 Wine</span>
+        <span class="pill vibe" data-vibe="sport">🏀 Sports</span>
+        <span class="pill vibe" data-vibe="travel">✈️ Travel</span>
+        <span class="pill vibe" data-vibe="books">📚 Books</span>
+        <span class="pill vibe" data-vibe="music">🎵 Music</span>
+        <span class="pill vibe" data-vibe="food">🍰 Foodies</span>
+      </div>
+    </div>
+
+    <button class="btn-primary" id="generateBtn">✨ Generate Hashtags</button>
+  </div>
+
+  <div class="card" id="loadingCard" style="display:none;">
+    <div class="loading-wrap">
+      <div class="spinner"></div>
+      <p>Dreaming up witty puns for your names… 💭</p>
+    </div>
+  </div>
+
+  <div class="card" id="resultsCard" style="display:none;">
+    <div id="results"></div>
+    <div style="text-align:center;">
+      <button class="btn-ghost" id="moreBtn">🔁 Generate More</button>
+    </div>
+  </div>
+
+  <div class="card" id="emptyCard">
+    <div class="empty">👆 Enter your names above and hit <b>Generate</b> — we'll cook up 40+ hashtags for your big day.</div>
+  </div>
+
+  <footer>
+    Copyright <span id="year"></span> © <a href="./">Hashtag Maker</a>. All rights reserved.<br>
+    <span style="font-size:12px;">Made with ❤️ for couples about to say "I do"</span>
+  </footer>
+</main>
+
+<!-- SEO content skeleton: h2 sections feed search engines long-tail keywords; also valuable for real users -->
+<article class="seo">
+  <section>
+    <h2>How to Make a Wedding Hashtag in 3 Steps</h2>
+    <p>A great wedding hashtag makes it easy for guests to tag photos so you can collect every moment in one place. Here's how to create one:</p>
+    <ol>
+      <li><b>Start with your names.</b> Combine your first names, last name, or initials — that's where the best puns live.</li>
+      <li><b>Pick a vibe.</b> Go punny and witty, romantic, short &amp; classic, or cute. Match it to your invitation style.</li>
+      <li><b>Check it's unique.</b> Search the tag on Instagram and Pinterest before you print it on signs and favors.</li>
+    </ol>
+    <p>Our free generator above does steps 1–2 for you in seconds — just type your names and tap <b>Generate</b>.</p>
+  </section>
+
+  <section>
+    <h2>Wedding Hashtag Ideas by Style</h2>
+    <p>Not sure which direction fits your day? Browse ideas by the vibe you want your guests to feel:</p>
+    <div class="style-grid">
+      <a class="style-card" href="/funny-wedding-hashtags"><b>😂 Funny &amp; Punny</b><br>Play on words using your last name — the most shared style.</a>
+      <a class="style-card" href="/romantic-wedding-hashtags"><b>🥰 Romantic</b><br>Soft, heartfelt tags perfect for candlelit and destination weddings.</a>
+      <a class="style-card" href="/wedding-hashtag-ideas"><b>💡 General Ideas</b><br>Curated lists when you just need inspiration to get started.</a>
+      <a class="style-card" href="/best-wedding-hashtags"><b>🏆 Best of 2026</b><br>This year's most-loved tags and trending formats.</a>
+    </div>
+  </section>
+
+  <section>
+    <h2>Tips for a Memorable Wedding Hashtag</h2>
+    <ul>
+      <li><b>Keep it readable.</b> CamelCase (#TheWrightWedding) beats run-together text so guests don't mistag.</li>
+      <li><b>Use your last name.</b> Shared or new last names unlock the punniest options.</li>
+      <li><b>Make it specific.</b> Add the year or wedding city if your name is common.</li>
+      <li><b>Test before you commit.</b> A quick search avoids an accidental double meaning.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-item"><h3>What is a wedding hashtag?</h3><p>A short, unique tag (like #WrightSaysIDo) that you and your guests add to photos on Instagram, Pinterest, and TikTok so every moment collects in one searchable place.</p></div>
+    <div class="faq-item"><h3>Are wedding hashtag generators free?</h3><p>Yes — this tool is completely free, requires no sign-up, and works instantly in your browser.</p></div>
+    <div class="faq-item"><h3>Should my hashtag include my last name?</h3><p>If you're taking or sharing a last name, including it usually produces the cleverest, most personalized puns. Leave it blank if you prefer first-name-only tags.</p></div>
+    <div class="faq-item"><h3>Can I use the same hashtag on Instagram and Pinterest?</h3><p>Absolutely. The same tag works across Instagram, Pinterest, TikTok, and Facebook — consistency helps you gather every photo in one spot.</p></div>
+  </section>
+
+  <section>
+    <h2>Explore More Hashtag Ideas</h2>
+    <div class="explore">
+      <a href="/wedding-hashtag-for-smith">Wedding Hashtag for Smith</a>
+      <a href="/wedding-hashtag-for-johnson">for Johnson</a>
+      <a href="/wedding-hashtag-for-williams">for Williams</a>
+      <a href="/wedding-hashtag-for-brown">for Brown</a>
+      <a href="/instagram-wedding-hashtags">Instagram Wedding Hashtags</a>
+    </div>
+  </section>
+</article>
+
+<div class="toast" id="toast"></div>
+
+<!-- email capture modal -->
+<div class="modal-overlay" id="emailModal">
+  <div class="modal">
+    <button class="close-x" id="modalClose">✕</button>
+    <div id="modalForm">
+      <h2>🎁 Unlock 10 Bonus Hashtags</h2>
+      <div class="m-sub">Personalized just for your names &amp; vibe — plus a free <b>Wedding Planning Checklist</b> in your inbox.</div>
+      <div class="bonus" id="modalBonus"></div>
+      <input type="text" id="mName" placeholder="Your first name" maxlength="30">
+      <input type="email" id="mEmail" placeholder="Your email" maxlength="60">
+      <button class="btn-primary" id="mSubmit">Send Me My Bonus Hashtags 💌</button>
+      <div style="margin-top:10px;"><button class="skip" id="mSkip">No thanks, I'll just use these</button></div>
+    </div>
+    <div id="modalDone" style="display:none;">
+      <div class="done">
+        <div class="heart">💍</div>
+        <h2>You're on the list!</h2>
+        <p class="m-sub">Bonus hashtags &amp; your free checklist are on the way to your inbox.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+/* Wordbank: full version injected at build; fallback for local preview */
+const WORDBANK = typeof {"meta": {"name": "Wedding Hashtag Wordbank v1.0", "description": "婚礼话题标签双关语词库与创意模板。前端规则引擎基于此库组合生成；静态内容页也可引用此库批量产出'姓氏专属页'。", "generated_by": "ima.copilot for user's wedding hashtag generator project", "date": "2026-08-18", "placeholder_legend": {"{B}": "新娘名 (bride first name)", "{G}": "新郎名 (groom first name)", "{L}": "未来姓氏 (future last name)", "{P}": "姓氏谐音词 (pun word from name_puns)", "{Y}": "婚礼年份 (e.g. 2026)", "{V}": "场景词 (vibe word)"}, "tone_list": ["punny", "romantic", "classic", "cute"]}, "name_puns": {"wright": {"puns": ["right", "write"], "note": "The Right One / write our story"}, "white": {"puns": ["bright", "white"], "note": "white dress puns"}, "green": {"puns": ["green light", "greene"], "note": "green light to love"}, "black": {"puns": ["black tie", "black"]}, "brown": {"puns": ["brownie", "brown"]}, "gray": {"puns": ["great", "grey"], "note": "gray -> great day"}, "grey": {"puns": ["great", "gray"]}, "bell": {"puns": ["wedding bells", "bells"]}, "brooks": {"puns": ["brook"]}, "cole": {"puns": ["coal", "cold"]}, "holmes": {"puns": ["home", "holmes"], "note": "holmes sweet holmes"}, "hunter": {"puns": ["hunt", "hunter"]}, "jackson": {"puns": ["jackpot", "jack"]}, "long": {"puns": ["long", "along"]}, "moore": {"puns": ["more", "moore"]}, "more": {"puns": ["more"]}, "morgan": {"puns": ["more than", "more"], "note": "more than words morgan"}, "parker": {"puns": ["park"]}, "reed": {"puns": ["read"]}, "richardson": {"puns": ["rich"]}, "river": {"puns": ["river"]}, "rivers": {"puns": ["river", "rivers"]}, "robinson": {"puns": ["robin", "robbin"]}, "ross": {"puns": ["rose", "ross"]}, "rose": {"puns": ["rose", "roses"]}, "turner": {"puns": ["turn"]}, "walker": {"puns": ["walk", "walker"]}, "webb": {"puns": ["web", "webb"]}, "williams": {"puns": ["will", "williams"]}, "wilson": {"puns": ["will", "wilson"]}, "wood": {"puns": ["would", "wood"], "note": "wood you marry me"}, "young": {"puns": ["young", "forever young"]}, "king": {"puns": ["king", "royalty", "kingdom"]}, "knight": {"puns": ["night", "knight"], "note": "knight in shining armor"}, "fisher": {"puns": ["fish", "fisher"]}, "cook": {"puns": ["cook", "cooking"]}, "gardner": {"puns": ["garden", "gardner"]}, "gardener": {"puns": ["garden"]}, "hunt": {"puns": ["hunt"]}, "price": {"puns": ["price", "priceless"]}, "bishop": {"puns": ["bishop"]}, "marshall": {"puns": ["marshal"]}, "wells": {"puns": ["well", "wells"]}, "page": {"puns": ["page", "new page"]}, "rice": {"puns": ["rice"]}, "stone": {"puns": ["stone", "set in stone"]}, "field": {"puns": ["field", "fields"]}, "moon": {"puns": ["moon", "honeymoon"]}, "summers": {"puns": ["summer", "summers"]}, "winters": {"puns": ["winter", "winters"]}, "fox": {"puns": ["fox", "foxy"]}, "wolf": {"puns": ["wolf"]}, "bear": {"puns": ["bear"]}, "bird": {"puns": ["bird"]}, "finch": {"puns": ["finch"]}, "hawk": {"puns": ["hawk"]}, "star": {"puns": ["star", "starlight"]}, "golden": {"puns": ["golden", "gold"]}, "silver": {"puns": ["silver"]}, "diamond": {"puns": ["diamond"]}, "pearl": {"puns": ["pearl"]}, "baker": {"puns": ["bake", "baker"]}, "smith": {"puns": ["smithy", "forge", "smith"]}, "taylor": {"puns": ["tailor", "tailor-made"]}, "miller": {"puns": ["mill"]}, "carter": {"puns": ["cart"]}, "cooper": {"puns": ["coop", "cooper"]}, "mason": {"puns": ["built to last", "mason"]}, "clark": {"puns": ["clark"]}, "lewis": {"puns": ["lewis"]}, "hall": {"puns": ["hall", "halls of love"]}, "hayes": {"puns": ["haze", "hayes"]}, "hughes": {"puns": ["hue", "hughes"]}, "howard": {"puns": ["how", "howard"]}, "jones": {"puns": ["jones"]}, "kelly": {"puns": ["kelly"]}, "kennedy": {"puns": ["kennedy"]}, "lee": {"puns": ["lee"]}, "martin": {"puns": ["martin"]}, "mitchell": {"puns": ["mitchell"]}, "murphy": {"puns": ["murphy"]}, "perry": {"puns": ["pear", "perry"]}, "ramirez": {"puns": ["ramirez"]}, "roberts": {"puns": ["robbin", "roberts"]}, "rogers": {"puns": ["rogers"]}, "sanders": {"puns": ["sand", "sanders"]}, "scott": {"puns": ["scott"]}, "simmons": {"puns": ["sim", "simmons"]}, "stewart": {"puns": ["stew", "stewart"]}, "thomas": {"puns": ["tom", "thomas"]}, "thompson": {"puns": ["tom", "thompson"]}, "ward": {"puns": ["ward"]}, "washington": {"puns": ["wash", "washington"]}, "watson": {"puns": ["wat", "watson"]}, "bennett": {"puns": ["bennett"]}, "barnes": {"puns": ["barn", "barnes"]}, "hamilton": {"puns": ["ham", "hamilton"]}, "graham": {"puns": ["gram", "graham"]}, "nelson": {"puns": ["nelson"]}, "owen": {"puns": ["owe", "owen"]}, "phillips": {"puns": ["fill", "phillips"]}, "powell": {"puns": ["power", "powell"], "note": "power couple"}, "peterson": {"puns": ["pet", "peterson"]}, "patterson": {"puns": ["pat", "patterson"]}, "jensen": {"puns": ["jen", "jensen"]}, "foster": {"puns": ["foster"]}, "edwards": {"puns": ["ed", "edwards"]}, "dixon": {"puns": ["dixon"]}, "collins": {"puns": ["collins"]}, "bailey": {"puns": ["bail", "bailey"]}, "austin": {"puns": ["austin"]}, "allison": {"puns": ["ally", "allison"]}, "adams": {"puns": ["adam", "adams"]}, "abbott": {"puns": ["a", "abbott"]}, "zimmerman": {"puns": ["zimmer", "zimmerman"]}, "yang": {"puns": ["young", "yang"]}, "xu": {"puns": ["shoe", "xu"]}, "wang": {"puns": ["wong", "wang"]}, "li": {"puns": ["lee", "li"]}, "chen": {"puns": ["chen"]}, "zhang": {"puns": ["zhang"]}, "lin": {"puns": ["lin"]}, "wu": {"puns": ["woo", "wu"]}, "huang": {"puns": ["hwang", "huang"]}, "sun": {"puns": ["sun", "son"]}, "song": {"puns": ["song"]}, "park": {"puns": ["park"]}, "kim": {"puns": ["kim"]}}, "templates": {"punny": ["The{P}{L}s", "The{L}Puns", "{P}Here{L}Stay", "{G}And{B}Got{P}", "ToHaveAndTo{L}", "{L}InTheMaking", "MayThe{P}BeWithUs", "{B}And{G}Are{P}", "{P}AtFirstSight", "No{P}No{L}NoLove", "{L}BeforeLove", "Getting{P}With{B}And{G}", "The{P}Decision", "{G}Locked{P}In", "{B}PutA{P}OnIt", "{P}ByChance", "The{L}sJustGot{P}", "ItTakesTwoTo{P}", "{B}And{G}Are{P}Together", "{L}sGone{P}"], "romantic": ["Forever{B}And{G}", "AlwaysAndForever{L}", "LoveIsInThe{L}Air", "{B}And{G}Endlessly", "HappilyEver{B}And{G}", "The{L}LoveStory", "WrittenInTheStars{L}", "{B}And{G}TilTheEnd", "Soulmates{B}And{G}", "FromThisDayForward{L}", "TheBeginningOfUs{L}", "EveryLoveStoryIsBeautiful", "TogetherIsOurFavoritePlace", "{B}And{G}ForeverAndAlways", "OneLoveTwoNames{L}", "LovedYouThenLoveYouNow", "OurLoveStory{L}", "WhereLoveBegins{L}", "{B}And{G}Always", "The{L}sForever"], "classic": ["{B}And{G}{Y}", "MrAndMrs{L}", "The{L}s", "JustMarried{L}", "{B}Weds{G}", "The{L}Wedding", "{B}And{G}SayIDo", "Team{L}", "The{L}sTieTheKnot", "IDo{L}", "{B}And{G}TieTheKnot", "The{L}Celebration", "{B}And{G}2026", "HappilyEverAfter{L}", "The{L}sBigDay", "JustGotMarried{L}", "{B}And{G}WeddingDay", "The{L}sExchangeVows", "Newlyweds{L}", "The{L}sOfficial"], "cute": ["{B}And{G}SittinInATree", "CutestCouple{L}", "{B}Loves{G}", "{G}And{B}BestDayEver", "LoveBugs{L}", "{B}And{G}SnugAsABug", "Sweetest{L}s", "{G}PutARingOnIt", "BeeMine{L}", "{B}And{G}HappilyInLove", "LoveYouMore{L}", "TinyDancer{B}And{G}", "TheCutest{L}s", "{B}And{G}LoveNest", "PuppyLove{L}", "{B}And{G}Sweethearts", "KissMe{L}", "{B}And{G}AllDayEveryDay", "MyPerson{L}", "{B}And{G}Adorable"]}, "vibe_words": {"beach": {"label": "Beach", "emoji": "🏖", "words": ["sandy", "waves", "seaside", "shore"], "templates": ["BeachPlease{L}", "WavesOfLove{B}And{G}", "{B}And{G}SandyToes", "LoveAtThe{L}Shore", "SeasTheDay{L}", "ShellYesTo{L}", "TideAndKnot{L}"]}, "coffee": {"label": "Coffee", "emoji": "☕", "words": ["latte", "brew", "roasted"], "templates": ["LoveYouALatte{L}", "BrewedForEachOther{B}And{G}", "{B}And{G}GroundsForCelebration", "The{L}sPerkUp", "LoveAtFirstBrew", "EspressoYourself{L}", "ButFirstCoffee{L}ThenVows"]}, "cat": {"label": "Cat Lovers", "emoji": "🐱", "words": ["purr", "meow", "feline"], "templates": ["PurrfectlyMatched{L}", "{B}And{G}CatOutTheBag", "The{L}sPawsForALoveStory", "MeowAndForever{L}", "PurrfectPair{L}", "CatGotTheRing{L}", "{B}And{G}FelineFine"]}, "dog": {"label": "Dog Lovers", "emoji": "🐶", "words": ["paw", "puppy", "fetch"], "templates": ["PawfectlyInLove{L}", "{B}And{G}PuppyLove", "The{L}sFetchingVows", "LoyalAsALabrador{L}", "PawsAndVows{L}", "{B}And{G}WalkDownTheAisle", "GoodBoy{G}GotTheGirl"]}, "wine": {"label": "Wine", "emoji": "🍷", "words": ["vino", "toast", "pour"], "templates": ["ToastToThe{L}s", "{B}And{G}WineTogether", "LoveYouMoreThanWine{L}", "The{L}sPourEver", "VinoAndVows{L}", "{B}And{G}CheersToUs", "UncorkingLove{L}"]}, "sport": {"label": "Sports Fans", "emoji": "🏀", "words": ["team", "score", "game"], "templates": ["Team{L}", "{B}And{G}PerfectMatch", "The{L}sGameOn", "LoveScoresBig{L}", "HomeRunHeart{L}", "{B}And{G}FullCourtLove", "The{L}sWinAtLove"]}, "travel": {"label": "Travel", "emoji": "✈️", "words": ["adventure", "passport", "wander"], "templates": ["{B}And{G}LoveAtFirstFlight", "The{L}sNextAdventure", "PassportToLove{L}", "{B}And{G}WanderLust", "The{L}sJetSet", "LoveIsTheDestination{L}", "{B}And{G}BoardingToForever"]}, "books": {"label": "Book Lovers", "emoji": "📚", "words": ["chapter", "story", "author"], "templates": ["The{L}sNextChapter", "{B}And{G}LoveStory", "HappilyEverAfter{L}", "The{L}sTurnThePage", "WrittenInTheStars{L}", "{B}And{G}BookedForLife", "The{L}sLoveNovel"]}, "music": {"label": "Music Lovers", "emoji": "🎵", "words": ["melody", "harmony", "song"], "templates": ["{B}And{G}InHarmony", "The{L}sLoveSong", "PerfectHarmony{L}", "{B}And{G}OurSong", "The{L}sStrikeAChord", "LoveIsTheMelody{L}", "{B}And{G}PlayItAgain"]}, "food": {"label": "Foodies", "emoji": "🍰", "words": ["recipe", "dessert", "spice"], "templates": ["{B}And{G}SweetestDish", "The{L}sLoveRecipe", "SpicingUpLife{L}", "{B}And{G}MainCourse", "The{L}sPieceOfCake", "CookingUpLove{L}", "{B}And{G}SimplyDelicious"]}}, "fallback_words": {"positive": ["happily", "forever", "endless", "forevermore", "always", "together", "blissful", "joyful", "amazing"], "wedding": ["vows", "aisle", "knot", "ring", "forever", "honeymoon", "weddingbells", "love", "romance", "celebration"]}} !== "undefined" ? {"meta": {"name": "Wedding Hashtag Wordbank v1.0", "description": "婚礼话题标签双关语词库与创意模板。前端规则引擎基于此库组合生成；静态内容页也可引用此库批量产出'姓氏专属页'。", "generated_by": "ima.copilot for user's wedding hashtag generator project", "date": "2026-08-18", "placeholder_legend": {"{B}": "新娘名 (bride first name)", "{G}": "新郎名 (groom first name)", "{L}": "未来姓氏 (future last name)", "{P}": "姓氏谐音词 (pun word from name_puns)", "{Y}": "婚礼年份 (e.g. 2026)", "{V}": "场景词 (vibe word)"}, "tone_list": ["punny", "romantic", "classic", "cute"]}, "name_puns": {"wright": {"puns": ["right", "write"], "note": "The Right One / write our story"}, "white": {"puns": ["bright", "white"], "note": "white dress puns"}, "green": {"puns": ["green light", "greene"], "note": "green light to love"}, "black": {"puns": ["black tie", "black"]}, "brown": {"puns": ["brownie", "brown"]}, "gray": {"puns": ["great", "grey"], "note": "gray -> great day"}, "grey": {"puns": ["great", "gray"]}, "bell": {"puns": ["wedding bells", "bells"]}, "brooks": {"puns": ["brook"]}, "cole": {"puns": ["coal", "cold"]}, "holmes": {"puns": ["home", "holmes"], "note": "holmes sweet holmes"}, "hunter": {"puns": ["hunt", "hunter"]}, "jackson": {"puns": ["jackpot", "jack"]}, "long": {"puns": ["long", "along"]}, "moore": {"puns": ["more", "moore"]}, "more": {"puns": ["more"]}, "morgan": {"puns": ["more than", "more"], "note": "more than words morgan"}, "parker": {"puns": ["park"]}, "reed": {"puns": ["read"]}, "richardson": {"puns": ["rich"]}, "river": {"puns": ["river"]}, "rivers": {"puns": ["river", "rivers"]}, "robinson": {"puns": ["robin", "robbin"]}, "ross": {"puns": ["rose", "ross"]}, "rose": {"puns": ["rose", "roses"]}, "turner": {"puns": ["turn"]}, "walker": {"puns": ["walk", "walker"]}, "webb": {"puns": ["web", "webb"]}, "williams": {"puns": ["will", "williams"]}, "wilson": {"puns": ["will", "wilson"]}, "wood": {"puns": ["would", "wood"], "note": "wood you marry me"}, "young": {"puns": ["young", "forever young"]}, "king": {"puns": ["king", "royalty", "kingdom"]}, "knight": {"puns": ["night", "knight"], "note": "knight in shining armor"}, "fisher": {"puns": ["fish", "fisher"]}, "cook": {"puns": ["cook", "cooking"]}, "gardner": {"puns": ["garden", "gardner"]}, "gardener": {"puns": ["garden"]}, "hunt": {"puns": ["hunt"]}, "price": {"puns": ["price", "priceless"]}, "bishop": {"puns": ["bishop"]}, "marshall": {"puns": ["marshal"]}, "wells": {"puns": ["well", "wells"]}, "page": {"puns": ["page", "new page"]}, "rice": {"puns": ["rice"]}, "stone": {"puns": ["stone", "set in stone"]}, "field": {"puns": ["field", "fields"]}, "moon": {"puns": ["moon", "honeymoon"]}, "summers": {"puns": ["summer", "summers"]}, "winters": {"puns": ["winter", "winters"]}, "fox": {"puns": ["fox", "foxy"]}, "wolf": {"puns": ["wolf"]}, "bear": {"puns": ["bear"]}, "bird": {"puns": ["bird"]}, "finch": {"puns": ["finch"]}, "hawk": {"puns": ["hawk"]}, "star": {"puns": ["star", "starlight"]}, "golden": {"puns": ["golden", "gold"]}, "silver": {"puns": ["silver"]}, "diamond": {"puns": ["diamond"]}, "pearl": {"puns": ["pearl"]}, "baker": {"puns": ["bake", "baker"]}, "smith": {"puns": ["smithy", "forge", "smith"]}, "taylor": {"puns": ["tailor", "tailor-made"]}, "miller": {"puns": ["mill"]}, "carter": {"puns": ["cart"]}, "cooper": {"puns": ["coop", "cooper"]}, "mason": {"puns": ["built to last", "mason"]}, "clark": {"puns": ["clark"]}, "lewis": {"puns": ["lewis"]}, "hall": {"puns": ["hall", "halls of love"]}, "hayes": {"puns": ["haze", "hayes"]}, "hughes": {"puns": ["hue", "hughes"]}, "howard": {"puns": ["how", "howard"]}, "jones": {"puns": ["jones"]}, "kelly": {"puns": ["kelly"]}, "kennedy": {"puns": ["kennedy"]}, "lee": {"puns": ["lee"]}, "martin": {"puns": ["martin"]}, "mitchell": {"puns": ["mitchell"]}, "murphy": {"puns": ["murphy"]}, "perry": {"puns": ["pear", "perry"]}, "ramirez": {"puns": ["ramirez"]}, "roberts": {"puns": ["robbin", "roberts"]}, "rogers": {"puns": ["rogers"]}, "sanders": {"puns": ["sand", "sanders"]}, "scott": {"puns": ["scott"]}, "simmons": {"puns": ["sim", "simmons"]}, "stewart": {"puns": ["stew", "stewart"]}, "thomas": {"puns": ["tom", "thomas"]}, "thompson": {"puns": ["tom", "thompson"]}, "ward": {"puns": ["ward"]}, "washington": {"puns": ["wash", "washington"]}, "watson": {"puns": ["wat", "watson"]}, "bennett": {"puns": ["bennett"]}, "barnes": {"puns": ["barn", "barnes"]}, "hamilton": {"puns": ["ham", "hamilton"]}, "graham": {"puns": ["gram", "graham"]}, "nelson": {"puns": ["nelson"]}, "owen": {"puns": ["owe", "owen"]}, "phillips": {"puns": ["fill", "phillips"]}, "powell": {"puns": ["power", "powell"], "note": "power couple"}, "peterson": {"puns": ["pet", "peterson"]}, "patterson": {"puns": ["pat", "patterson"]}, "jensen": {"puns": ["jen", "jensen"]}, "foster": {"puns": ["foster"]}, "edwards": {"puns": ["ed", "edwards"]}, "dixon": {"puns": ["dixon"]}, "collins": {"puns": ["collins"]}, "bailey": {"puns": ["bail", "bailey"]}, "austin": {"puns": ["austin"]}, "allison": {"puns": ["ally", "allison"]}, "adams": {"puns": ["adam", "adams"]}, "abbott": {"puns": ["a", "abbott"]}, "zimmerman": {"puns": ["zimmer", "zimmerman"]}, "yang": {"puns": ["young", "yang"]}, "xu": {"puns": ["shoe", "xu"]}, "wang": {"puns": ["wong", "wang"]}, "li": {"puns": ["lee", "li"]}, "chen": {"puns": ["chen"]}, "zhang": {"puns": ["zhang"]}, "lin": {"puns": ["lin"]}, "wu": {"puns": ["woo", "wu"]}, "huang": {"puns": ["hwang", "huang"]}, "sun": {"puns": ["sun", "son"]}, "song": {"puns": ["song"]}, "park": {"puns": ["park"]}, "kim": {"puns": ["kim"]}}, "templates": {"punny": ["The{P}{L}s", "The{L}Puns", "{P}Here{L}Stay", "{G}And{B}Got{P}", "ToHaveAndTo{L}", "{L}InTheMaking", "MayThe{P}BeWithUs", "{B}And{G}Are{P}", "{P}AtFirstSight", "No{P}No{L}NoLove", "{L}BeforeLove", "Getting{P}With{B}And{G}", "The{P}Decision", "{G}Locked{P}In", "{B}PutA{P}OnIt", "{P}ByChance", "The{L}sJustGot{P}", "ItTakesTwoTo{P}", "{B}And{G}Are{P}Together", "{L}sGone{P}"], "romantic": ["Forever{B}And{G}", "AlwaysAndForever{L}", "LoveIsInThe{L}Air", "{B}And{G}Endlessly", "HappilyEver{B}And{G}", "The{L}LoveStory", "WrittenInTheStars{L}", "{B}And{G}TilTheEnd", "Soulmates{B}And{G}", "FromThisDayForward{L}", "TheBeginningOfUs{L}", "EveryLoveStoryIsBeautiful", "TogetherIsOurFavoritePlace", "{B}And{G}ForeverAndAlways", "OneLoveTwoNames{L}", "LovedYouThenLoveYouNow", "OurLoveStory{L}", "WhereLoveBegins{L}", "{B}And{G}Always", "The{L}sForever"], "classic": ["{B}And{G}{Y}", "MrAndMrs{L}", "The{L}s", "JustMarried{L}", "{B}Weds{G}", "The{L}Wedding", "{B}And{G}SayIDo", "Team{L}", "The{L}sTieTheKnot", "IDo{L}", "{B}And{G}TieTheKnot", "The{L}Celebration", "{B}And{G}2026", "HappilyEverAfter{L}", "The{L}sBigDay", "JustGotMarried{L}", "{B}And{G}WeddingDay", "The{L}sExchangeVows", "Newlyweds{L}", "The{L}sOfficial"], "cute": ["{B}And{G}SittinInATree", "CutestCouple{L}", "{B}Loves{G}", "{G}And{B}BestDayEver", "LoveBugs{L}", "{B}And{G}SnugAsABug", "Sweetest{L}s", "{G}PutARingOnIt", "BeeMine{L}", "{B}And{G}HappilyInLove", "LoveYouMore{L}", "TinyDancer{B}And{G}", "TheCutest{L}s", "{B}And{G}LoveNest", "PuppyLove{L}", "{B}And{G}Sweethearts", "KissMe{L}", "{B}And{G}AllDayEveryDay", "MyPerson{L}", "{B}And{G}Adorable"]}, "vibe_words": {"beach": {"label": "Beach", "emoji": "🏖", "words": ["sandy", "waves", "seaside", "shore"], "templates": ["BeachPlease{L}", "WavesOfLove{B}And{G}", "{B}And{G}SandyToes", "LoveAtThe{L}Shore", "SeasTheDay{L}", "ShellYesTo{L}", "TideAndKnot{L}"]}, "coffee": {"label": "Coffee", "emoji": "☕", "words": ["latte", "brew", "roasted"], "templates": ["LoveYouALatte{L}", "BrewedForEachOther{B}And{G}", "{B}And{G}GroundsForCelebration", "The{L}sPerkUp", "LoveAtFirstBrew", "EspressoYourself{L}", "ButFirstCoffee{L}ThenVows"]}, "cat": {"label": "Cat Lovers", "emoji": "🐱", "words": ["purr", "meow", "feline"], "templates": ["PurrfectlyMatched{L}", "{B}And{G}CatOutTheBag", "The{L}sPawsForALoveStory", "MeowAndForever{L}", "PurrfectPair{L}", "CatGotTheRing{L}", "{B}And{G}FelineFine"]}, "dog": {"label": "Dog Lovers", "emoji": "🐶", "words": ["paw", "puppy", "fetch"], "templates": ["PawfectlyInLove{L}", "{B}And{G}PuppyLove", "The{L}sFetchingVows", "LoyalAsALabrador{L}", "PawsAndVows{L}", "{B}And{G}WalkDownTheAisle", "GoodBoy{G}GotTheGirl"]}, "wine": {"label": "Wine", "emoji": "🍷", "words": ["vino", "toast", "pour"], "templates": ["ToastToThe{L}s", "{B}And{G}WineTogether", "LoveYouMoreThanWine{L}", "The{L}sPourEver", "VinoAndVows{L}", "{B}And{G}CheersToUs", "UncorkingLove{L}"]}, "sport": {"label": "Sports Fans", "emoji": "🏀", "words": ["team", "score", "game"], "templates": ["Team{L}", "{B}And{G}PerfectMatch", "The{L}sGameOn", "LoveScoresBig{L}", "HomeRunHeart{L}", "{B}And{G}FullCourtLove", "The{L}sWinAtLove"]}, "travel": {"label": "Travel", "emoji": "✈️", "words": ["adventure", "passport", "wander"], "templates": ["{B}And{G}LoveAtFirstFlight", "The{L}sNextAdventure", "PassportToLove{L}", "{B}And{G}WanderLust", "The{L}sJetSet", "LoveIsTheDestination{L}", "{B}And{G}BoardingToForever"]}, "books": {"label": "Book Lovers", "emoji": "📚", "words": ["chapter", "story", "author"], "templates": ["The{L}sNextChapter", "{B}And{G}LoveStory", "HappilyEverAfter{L}", "The{L}sTurnThePage", "WrittenInTheStars{L}", "{B}And{G}BookedForLife", "The{L}sLoveNovel"]}, "music": {"label": "Music Lovers", "emoji": "🎵", "words": ["melody", "harmony", "song"], "templates": ["{B}And{G}InHarmony", "The{L}sLoveSong", "PerfectHarmony{L}", "{B}And{G}OurSong", "The{L}sStrikeAChord", "LoveIsTheMelody{L}", "{B}And{G}PlayItAgain"]}, "food": {"label": "Foodies", "emoji": "🍰", "words": ["recipe", "dessert", "spice"], "templates": ["{B}And{G}SweetestDish", "The{L}sLoveRecipe", "SpicingUpLife{L}", "{B}And{G}MainCourse", "The{L}sPieceOfCake", "CookingUpLove{L}", "{B}And{G}SimplyDelicious"]}}, "fallback_words": {"positive": ["happily", "forever", "endless", "forevermore", "always", "together", "blissful", "joyful", "amazing"], "wedding": ["vows", "aisle", "knot", "ring", "forever", "honeymoon", "weddingbells", "love", "romance", "celebration"]}} : {
+  name_puns:{"wright":{"puns":["right","write"]},"smith":{"puns":["smithy","forge"]},"morgan":{"puns":["more than","more"]},"johnson":{"puns":["john"]},"williams":{"puns":["will"]},"brown":{"puns":["brownie"]},"wood":{"puns":["would"]},"knight":{"puns":["night"]},"king":{"puns":["king","kingdom"]},"bell":{"puns":["bells"]},"rose":{"puns":["rose","roses"]},"moore":{"puns":["more"]},"cook":{"puns":["cook","cooking"]},"young":{"puns":["young"]},"green":{"puns":["green light"]},"white":{"puns":["bright"]},"turner":{"puns":["turn"]},"walker":{"puns":["walk"]},"parker":{"puns":["park"]},"hunter":{"puns":["hunt"]},"price":{"puns":["priceless"]},"stone":{"puns":["set in stone"]}},
+  templates:{
+    punny:["The{P}{L}s","{P}AtFirstSight","ToHaveAndTo{L}","{B}And{G}Got{P}","The{L}Puns","Getting{P}With{B}And{G}","The{P}Decision","{G}Locked{P}In","{B}PutA{P}OnIt","ItTakesTwoTo{P}","The{L}sJustGot{P}","{L}InTheMaking","{P}Here{L}Stay","MayThe{P}BeWithUs","{B}And{G}Are{P}","No{P}No{L}NoLove"],
+    romantic:["Forever{B}And{G}","AlwaysAndForever{L}","LoveIsInThe{L}Air","{B}And{G}Endlessly","The{L}LoveStory","WrittenInTheStars{L}","{B}And{G}TilTheEnd","Soulmates{B}And{G}","FromThisDayForward{L}","TheBeginningOfUs{L}","EveryLoveStoryIsBeautiful","TogetherIsOurFavoritePlace","{B}And{G}ForeverAndAlways","OneLoveTwoNames{L}","OurLoveStory{L}","The{L}sForever"],
+    classic:["{B}And{G}{Y}","MrAndMrs{L}","The{L}s","JustMarried{L}","{B}Weds{G}","The{L}Wedding","{B}And{G}SayIDo","Team{L}","The{L}sTieTheKnot","IDo{L}","HappilyEverAfter{L}","The{L}sBigDay","{B}And{G}WeddingDay","The{L}sExchangeVows","Newlyweds{L}","The{L}sOfficial"],
+    cute:["{B}And{G}SittinInATree","CutestCouple{L}","{B}Loves{G}","{G}And{B}BestDayEver","LoveBugs{L}","{B}And{G}SnugAsABug","Sweetest{L}s","{G}PutARingOnIt","BeeMine{L}","{B}And{G}HappilyInLove","LoveYouMore{L}","PuppyLove{L}","{B}And{G}Sweethearts","KissMe{L}","MyPerson{L}","{B}And{G}Adorable"]
+  },
+  vibe_words:{
+    beach:{emoji:"🏖",label:"Beach",templates:["BeachPlease{L}","WavesOfLove{B}And{G}","{B}And{G}SandyToes","LoveAtThe{L}Shore","SeasTheDay{L}","ShellYesTo{L}"]},
+    coffee:{emoji:"☕",label:"Coffee",templates:["LoveYouALatte{L}","BrewedForEachOther{B}And{G}","{B}And{G}GroundsForCelebration","The{L}sPerkUp","LoveAtFirstBrew","EspressoYourself{L}"]},
+    cat:{emoji:"🐱",label:"Cat Lovers",templates:["PurrfectlyMatched{L}","{B}And{G}CatOutTheBag","The{L}sPawsForALoveStory","MeowAndForever{L}","PurrfectPair{L}","{B}And{G}FelineFine"]},
+    dog:{emoji:"🐶",label:"Dog Lovers",templates:["PawfectlyInLove{L}","{B}And{G}PuppyLove","The{L}sFetchingVows","PawsAndVows{L}","{B}And{G}WalkDownTheAisle","GoodBoy{G}GotTheGirl"]},
+    wine:{emoji:"🍷",label:"Wine",templates:["ToastToThe{L}s","{B}And{G}WineTogether","LoveYouMoreThanWine{L}","The{L}sPourEver","VinoAndVows{L}","{B}And{G}CheersToUs"]},
+    sport:{emoji:"🏀",label:"Sports",templates:["Team{L}","{B}And{G}PerfectMatch","The{L}sGameOn","LoveScoresBig{L}","HomeRunHeart{L}","The{L}sWinAtLove"]},
+    travel:{emoji:"✈️",label:"Travel",templates:["{B}And{G}LoveAtFirstFlight","The{L}sNextAdventure","PassportToLove{L}","{B}And{G}WanderLust","The{L}sJetSet","LoveIsTheDestination{L}"]},
+    books:{emoji:"📚",label:"Books",templates:["The{L}sNextChapter","{B}And{G}LoveStory","HappilyEverAfter{L}","The{L}sTurnThePage","WrittenInTheStars{L}","{B}And{G}BookedForLife"]},
+    music:{emoji:"🎵",label:"Music",templates:["{B}And{G}InHarmony","The{L}sLoveSong","PerfectHarmony{L}","{B}And{G}OurSong","The{L}sStrikeAChord","LoveIsTheMelody{L}"]},
+    food:{emoji:"🍰",label:"Foodies",templates:["{B}And{G}SweetestDish","The{L}sLoveRecipe","SpicingUpLife{L}","{B}And{G}MainCourse","The{L}sPieceOfCake","CookingUpLove{L}"]}
+  }
+};
+
+/* ---------- helpers ---------- */
+const $ = (id) => document.getElementById(id);
+const cap = (s) => s ? s.charAt(0).toUpperCase() + s.slice(1) : s;
+const titleCase = (s) => s ? s.split(/[\s-]+/).map(cap).join("") : s;
+function toHashtag(s) { return "#" + s.replace(/[^a-zA-Z0-9]/g, ""); }
+function shuffle(arr) {
+  const a = arr.slice();
+  for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; }
+  return a;
+}
+
+/* ---------- state ---------- */
+let state = { tone: "punny", vibes: [], generated: false };
+
+/* ---------- tone / vibe selection ---------- */
+document.querySelectorAll("#tonePills .pill").forEach(p => {
+  p.addEventListener("click", () => {
+    document.querySelectorAll("#tonePills .pill").forEach(x => x.classList.remove("active"));
+    p.classList.add("active");
+    state.tone = p.dataset.tone;
+  });
+});
+document.querySelectorAll("#vibePills .pill").forEach(p => {
+  p.addEventListener("click", () => {
+    p.classList.toggle("active");
+    const v = p.dataset.vibe;
+    state.vibes = state.vibes.includes(v) ? state.vibes.filter(x => x !== v) : [...state.vibes, v];
+  });
+});
+
+/* ---------- template rendering ---------- */
+function renderTemplate(tpl, ctx) {
+  return tpl.replace(/\{B\}/g,ctx.bride).replace(/\{G\}/g,ctx.groom).replace(/\{L\}/g,ctx.last).replace(/\{P\}/g,ctx.pun).replace(/\{Y\}/g,String(ctx.year));
+}
+function buildContext() {
+  const bride = titleCase($("bride").value.trim());
+  const groom = titleCase($("groom").value.trim());
+  const lastRaw = $("last").value.trim();
+  const last = titleCase(lastRaw);
+  let pun = last;
+  if (lastRaw) {
+    const entry = WORDBANK.name_puns[lastRaw.toLowerCase()];
+    if (entry && entry.puns && entry.puns.length) pun = cap(shuffle(entry.puns)[0]);
+  }
+  return { bride, groom, last, pun, year: new Date().getFullYear() };
+}
+
+/* ---------- generation ---------- */
+function buildGroups(ctx) {
+  const groups = [];
+  const mainTone = state.tone;
+  const toneOrder = ["punny", "romantic", "classic", "cute"];
+  const toneEmoji = { punny: "😂", romantic: "🥰", classic: "🤵", cute: "🐻" };
+  const toneLabel = { punny: "Punny & Witty", romantic: "Romantic", classic: "Short & Classic", cute: "Cute" };
+  toneOrder.forEach(tone => {
+    const tpls = shuffle(WORDBANK.templates[tone]);
+    const count = tone === mainTone ? 16 : 6;
+    const tags = tpls.slice(0, count).map(t => toHashtag(renderTemplate(t, ctx)));
+    groups.push({ label: toneLabel[tone], emoji: toneEmoji[tone], tags });
+  });
+  state.vibes.forEach(v => {
+    const vb = WORDBANK.vibe_words[v];
+    if (!vb) return;
+    const tpls = shuffle(vb.templates).slice(0, 6);
+    const tags = tpls.map(t => toHashtag(renderTemplate(t, ctx)));
+    groups.push({ label: vb.emoji + " " + vb.label, emoji: vb.emoji, tags });
+  });
+  return groups;
+}
+
+function generate() {
+  const ctx = buildContext();
+  if (!ctx.bride || !ctx.groom) { showToast("Please enter both names 💍"); return; }
+  const btn = $("generateBtn");
+  btn.classList.add("loading");
+  btn.textContent = "💭 Generating…";
+  $("loadingCard").style.display = "block";
+  $("resultsCard").style.display = "none";
+  $("emptyCard").style.display = "none";
+  setTimeout(() => {
+    const groups = buildGroups(ctx);
+    render(groups);
+    btn.classList.remove("loading");
+    btn.textContent = "✨ Generate Hashtags";
+    $("loadingCard").style.display = "none";
+    state.generated = true;
+    maybeShowEmailModal(groups);
+  }, 1200);
+}
+
+function render(groups) {
+  const wrap = $("results");
+  wrap.innerHTML = "";
+  groups.forEach(g => {
+    const div = document.createElement("div");
+    div.className = "result-group";
+    const h = document.createElement("h3");
+    h.innerHTML = '<span class="emoji">' + g.emoji + '</span> ' + g.label;
+    const list = document.createElement("div");
+    list.className = "tag-list";
+    g.tags.forEach(tag => {
+      const item = document.createElement("span");
+      item.className = "tag-item";
+      item.innerHTML = '<span class="tag-text"></span><button class="mini-btn copy-btn" title="Copy">⧉</button><button class="mini-btn share-btn" title="Share">📌</button>';
+      item.querySelector(".tag-text").textContent = tag;
+      item.addEventListener("click", function(e) {
+        if (e.target.classList.contains("copy-btn")) { copyText(tag, e.target); }
+        else if (e.target.classList.contains("share-btn")) { shareTag(tag); }
+        else { showPreview(tag); }
+      });
+      list.appendChild(item);
+    });
+    div.appendChild(h);
+    div.appendChild(list);
+    wrap.appendChild(div);
+  });
+  $("resultsCard").style.display = "block";
+  $("resultsCard").scrollIntoView({ behavior: "smooth", block: "start" });
+}
+
+/* ---------- copy ---------- */
+function copyText(text, btnEl) {
+  const done = () => {
+    if (btnEl) { btnEl.textContent = "✓"; btnEl.classList.add("copied"); setTimeout(() => { if(btnEl){btnEl.textContent="⧉";btnEl.classList.remove("copied");} }, 1500); }
+    showToast("Copied! " + text);
+  };
+  if (navigator.clipboard && window.isSecureContext) { navigator.clipboard.writeText(text).then(done).catch(function(){fallbackCopy(text,done);}); }
+  else { fallbackCopy(text, done); }
+}
+function fallbackCopy(text, done) {
+  const ta = document.createElement("textarea"); ta.value = text; ta.style.position = "fixed"; ta.style.opacity = "0";
+  document.body.appendChild(ta); ta.select();
+  try { document.execCommand("copy"); done(); } catch(e) { showToast("Copy failed — select manually"); }
+  document.body.removeChild(ta);
+}
+
+/* ---------- share ---------- */
+function shareTag(tag) {
+  const shareData = { title: "Wedding Hashtag Ideas", text: "Check out this wedding hashtag: " + tag + " 💍", url: window.location.href };
+  if (navigator.share) { navigator.share(shareData).catch(function(){}); }
+  else { copyText(shareData.text + " — " + shareData.url, null); showToast("Copied! Paste it on Pinterest or Instagram 📌"); }
+}
+
+/* ---------- preview & monetize ---------- */
+function showPreview(tag) {
+  $("previewTag").textContent = tag;
+  $("preview").style.display = "block";
+  $("monetize").style.display = "block";
+  $("preview").scrollIntoView({ behavior: "smooth", block: "nearest" });
+}
+
+/* ---------- email capture ---------- */
+function maybeShowEmailModal(groups) {
+  if (localStorage.getItem("wh_captured") === "1") return;
+  if (!state.generated) return;
+  const first = groups[0];
+  const picks = first ? first.tags.slice(0, 3) : [];
+  $("modalBonus").innerHTML = picks.map(function(t){ return '<span class="b-tag">' + t + '</span>'; }).join("");
+  setTimeout(function(){ $("emailModal").classList.add("show"); }, 900);
+}
+function closeModal() { $("emailModal").classList.remove("show"); }
+$("modalClose").addEventListener("click", closeModal);
+$("mSkip").addEventListener("click", function() { localStorage.setItem("wh_captured", "1"); closeModal(); });
+$("mSubmit").addEventListener("click", function() {
+  const name = $("mName").value.trim();
+  const email = $("mEmail").value.trim();
+  if (!name || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { showToast("Please enter a valid name and email 💌"); return; }
+  try {
+    const list = JSON.parse(localStorage.getItem("wh_leads") || "[]");
+    list.push({ name: name, email: email, ts: new Date().toISOString(), tone: state.tone, vibes: state.vibes.join(",") });
+    localStorage.setItem("wh_leads", JSON.stringify(list));
+    localStorage.setItem("wh_captured", "1");
+  } catch(e) {}
+  $("modalForm").style.display = "none";
+  $("modalDone").style.display = "block";
+  setTimeout(closeModal, 2200);
+});
+
+/* ---------- toast ---------- */
+let toastTimer = null;
+function showToast(msg) {
+  const t = $("toast"); t.textContent = msg; t.classList.add("show");
+  clearTimeout(toastTimer); toastTimer = setTimeout(function(){ t.classList.remove("show"); }, 2000);
+}
+
+/* ---------- init ---------- */
+$("generateBtn").addEventListener("click", generate);
+$("moreBtn").addEventListener("click", generateMore);
+$("year").textContent = new Date().getFullYear();
+["bride","groom","last"].forEach(function(id){ $(id).addEventListener("keydown", function(e){ if(e.key==="Enter") generate(); }); });
+</script>
+</body>
+</html>
