@@ -442,6 +442,11 @@ function buildGroups(ctx) {
 function generate() {
   const ctx = buildContext();
   if (!ctx.bride || !ctx.groom) { showToast("Please enter both names 💍"); return; }
+  gtag('event', 'hashtag_generated', {
+    tone: state.tone,
+    vibes: state.vibes.join(','),
+    has_lastname: ctx.last ? 'yes' : 'no'
+  });
   const btn = $("generateBtn");
   btn.classList.add("loading");
   btn.textContent = "💭 Generating…";
@@ -494,6 +499,7 @@ function copyText(text, btnEl) {
   const done = () => {
     if (btnEl) { btnEl.textContent = "✓"; btnEl.classList.add("copied"); setTimeout(() => { if(btnEl){btnEl.textContent="⧉";btnEl.classList.remove("copied");} }, 1500); }
     showToast("Copied! " + text);
+    gtag('event', 'hashtag_copied', { tag: text });
   };
   if (navigator.clipboard && window.isSecureContext) { navigator.clipboard.writeText(text).then(done).catch(function(){fallbackCopy(text,done);}); }
   else { fallbackCopy(text, done); }
@@ -507,6 +513,7 @@ function fallbackCopy(text, done) {
 
 /* ---------- share ---------- */
 function shareTag(tag) {
+  gtag('event', 'hashtag_shared', { tag: tag });
   const shareData = { title: "Wedding Hashtag Ideas", text: "Check out this wedding hashtag: " + tag + " 💍", url: window.location.href };
   if (navigator.share) { navigator.share(shareData).catch(function(){}); }
   else { copyText(shareData.text + " — " + shareData.url, null); showToast("Copied! Paste it on Pinterest or Instagram 📌"); }
@@ -559,6 +566,10 @@ $("generateBtn").addEventListener("click", generate);
 $("moreBtn").addEventListener("click", generateMore);
 $("year").textContent = new Date().getFullYear();
 ["bride","groom","last"].forEach(function(id){ $(id).addEventListener("keydown", function(e){ if(e.key==="Enter") generate(); }); });
+</script>
+</body>
+</html>
+("keydown", function(e){ if(e.key==="Enter") generate(); }); });
 </script>
 </body>
 </html>
