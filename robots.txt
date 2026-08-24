@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://weddinghashtagmaker.com/sitemap.xml
+Sitemap: https://www.weddinghashtagmaker.com/sitemap.xml
