@@ -48,7 +48,38 @@
   footer a{color:var(--accent);text-decoration:none;}
   .toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(80px);background:var(--ink);color:#fff;padding:10px 22px;border-radius:999px;font-size:14px;opacity:0;transition:all .3s;pointer-events:none;z-index:99;}
   .toast.show{opacity:1;transform:translateX(-50%) translateY(0);}
+  /* SEO content */
+  .seo{max-width:900px;margin:0 auto;padding:0 20px 40px;}
+  .seo section{margin-bottom:30px;}
+  .seo h2{font-size:22px;font-weight:800;letter-spacing:-.3px;margin-bottom:12px;}
+  .seo h3{font-size:16px;font-weight:700;margin:16px 0 6px;color:var(--ink);}
+  .seo p,.seo li{color:#4a453f;font-size:15px;}
+  .seo ol,.seo ul{padding-left:22px;margin-top:6px;}
+  .seo li{margin-bottom:6px;}
+  .seo .style-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:12px;}
+  @media(max-width:640px){.seo .style-grid{grid-template-columns:1fr;}}
+  .seo .style-card{display:block;border:1px solid var(--line);border-radius:12px;padding:14px 16px;background:#fff;text-decoration:none;color:var(--ink);transition:all .15s;}
+  .seo .style-card:hover{border-color:var(--accent);box-shadow:var(--shadow);}
+  .seo .style-card b{color:var(--accent-dark);}
+  .seo .faq-item{border-bottom:1px solid var(--line);padding:12px 0;}
+  .seo .faq-item h3{margin:0 0 4px;}
+  .seo .faq-item p{margin:0;}
+  .seo .explore{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px;}
+  .seo .explore a{color:var(--accent);text-decoration:none;font-size:14px;border:1px solid var(--line);padding:6px 12px;border-radius:999px;}
+  .seo .explore a:hover{border-color:var(--accent);background:#fff;}
 </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"Where do I find wedding hashtag ideas?","acceptedAnswer":{"@type":"Answer","text":"Start from your names, then browse by style — funny, romantic, classic, or cute. Our idea hub gathers curated lists, and the free generator produces personalized tags from your last name."}},
+    {"@type":"Question","name":"How do I brainstorm a wedding hashtag?","acceptedAnswer":{"@type":"Answer","text":"Write your last name, list sound-alikes, then plug them into templates (#TheLs, #PHereLStay). Ten minutes of this beats an hour of staring at a blank box."}},
+    {"@type":"Question","name":"What if my last name has no good pun?","acceptedAnswer":{"@type":"Answer","text":"Use first names, initials, or the wedding city instead. #SamAndJosAYear, #TeamNguyen, and #ChicagoSaysIDo all work without a pun."}},
+    {"@type":"Question","name":"How many ideas should I pick from?","acceptedAnswer":{"@type":"Answer","text":"Generate 20-40, then narrow to one primary tag plus one backup. More than that splits your photo collection."}}
+  ]
+}
+</script>
 </head>
 <body>
 <header>
@@ -147,6 +178,58 @@
       <a href="/wedding-hashtags-for-brooks.html">Wedding Hashtags for Brooks</a>
     </div>
   </div>
+<article class="seo">
+  <section>
+    <h2>Where to Find Inspiration</h2>
+    <p>The fastest way to a great tag is to start from what you already have: your names. From there, browse by the feeling you want — funny, romantic, short &amp; classic, or cute. Each style points to a different kind of guest photo, so pick the one that matches your day. The idea hub below gathers curated lists so you never start from a blank box.</p>
+    <div class="style-grid">
+      <a class="style-card" href="/funny-wedding-hashtags.html"><b>😂 Funny</b><br>Last-name puns that get shared.</a>
+      <a class="style-card" href="/romantic-wedding-hashtags.html"><b>🥰 Romantic</b><br>Soft lines from your vows.</a>
+      <a class="style-card" href="/best-wedding-hashtags.html"><b>🏆 Best of 2026</b><br>This year's most-loved tags.</a>
+      <a class="style-card" href="/instagram-wedding-hashtags.html"><b>📸 Instagram</b><br>Formats built to travel.</a>
+    </div>
+  </section>
+
+  <section>
+    <h2>Brainstorming Frameworks</h2>
+    <ol>
+      <li><b>Names first.</b> Combine first names, last name, or initials — that's where puns live.</li>
+      <li><b>List sound-alikes.</b> Write every word your last name sounds like (Wright = right, Bell = bells).</li>
+      <li><b>Plug into templates.</b> #The{L}s, #{P}Here{L}Stay, #AlwaysAndForever{L}.</li>
+      <li><b>Test uniqueness.</b> Search Instagram; if it's crowded, add the year or city.</li>
+    </ol>
+    <p>Prefer not to do it by hand? The <a href="/" style="color:var(--accent);">free generator</a> runs all four steps from your names in seconds and hands you 40+ options to choose from.</p>
+  </section>
+
+  <section>
+    <h2>50+ Starter Templates</h2>
+    <p>Steal any of these skeletons and drop in your names. They cover every style:</p>
+    <ul>
+      <li><b>Classic:</b> #MrAndMrs{L}, #The{L}s, #JustMarried{L}, #Team{L}, #IDo{L}</li>
+      <li><b>Punny:</b> #The{L}s, #{P}Here{L}Stay, #{L}InTheMaking, #No{P}No{L}NoLove</li>
+      <li><b>Romantic:</b> #ForeverAndEver{L}, #AlwaysAndForever{L}, #LoveIsInThe{L}Air</li>
+      <li><b>Cute:</b> #{B}Loves{G}, #CutestCouple{L}, #LoveBugs{L}, #BeeMine{L}</li>
+      <li><b>Year:</b> #{B}And{G}{Y}, #The{L}s{Y}, #Newlyweds{L}{Y}</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>When Your Last Name Has No Pun</h2>
+    <p>Not every name puns cleanly — and that's fine. Use first names (#SamAndJo2026), initials (#TeamNK), or the wedding city (#ChicagoSaysIDo). A clear, ownable tag beats a forced pun every time. The goal is a tag your guests will remember at 11pm, not a pun only you appreciate.</p>
+  </section>
+
+  <section>
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-item"><h3>Where do I find wedding hashtag ideas?</h3><p>Start from your names, then browse by style — funny, romantic, classic, or cute. Our idea hub gathers curated lists, and the free generator produces personalized tags from your last name.</p></div>
+    <div class="faq-item"><h3>How do I brainstorm a wedding hashtag?</h3><p>Write your last name, list sound-alikes, then plug them into templates (#TheLs, #PHereLStay). Ten minutes of this beats an hour of staring at a blank box.</p></div>
+    <div class="faq-item"><h3>What if my last name has no good pun?</h3><p>Use first names, initials, or the wedding city instead. #SamAndJosAYear, #TeamNguyen, and #ChicagoSaysIDo all work without a pun.</p></div>
+    <div class="faq-item"><h3>How many ideas should I pick from?</h3><p>Generate 20-40, then narrow to one primary tag plus one backup. More than that splits your photo collection.</p></div>
+
+  <section>
+    <h2>Narrowing Down to One</h2>
+    <p>Once you have 20-40 candidates, cut to a shortlist by asking three questions: <b>Can a guest spell it drunk?</b> <b>Does it sound like us?</b> <b>Is it already crowded on Instagram?</b> Anything that fails a test gets dropped. You'll usually land on one clear winner plus a backup. The winner goes on every sign, the backup lives in the caption for variety. Resist the urge to use ten — a split collection is worse than a single strong tag.</p>
+  </section>  </section>
+</article>
 </main>
 
 <footer>
