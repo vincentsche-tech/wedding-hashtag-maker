@@ -1,0 +1,15 @@
+# llms.txt - Wedding Hashtag Maker
+https://www.weddinghashtagmaker.com/
+
+## What this site is
+Wedding Hashtag Maker is a free tool that generates personalized wedding hashtags from two names. It also publishes guides on choosing, styling, and sharing wedding hashtags across Instagram, Pinterest, TikTok, and Facebook.
+
+## Key pages
+- https://www.weddinghashtagmaker.com/ - Wedding Hashtag Generator (free tool)
+- https://www.weddinghashtagmaker.com/best-wedding-hashtags.html - Best wedding hashtags (curated ideas)
+- https://www.weddinghashtagmaker.com/funny-wedding-hashtags.html - Funny wedding hashtags
+- https://www.weddinghashtagmaker.com/romantic-wedding-hashtags.html - Romantic wedding hashtags
+- https://www.weddinghashtagmaker.com/instagram-wedding-hashtags.html - Instagram wedding hashtags
+- https://www.weddinghashtagmaker.com/wedding-hashtag-ideas.html - Wedding hashtag ideas
+- https://www.weddinghashtagmaker.com/about.html - About
+- https://www.weddinghashtagmaker.com/contact.html - Contact
