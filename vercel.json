@@ -1,8 +1,15 @@
 {
+  "cleanUrls": true,
   "redirects": [
     {
-      "source": "/funny-wedding-hashtags",
-      "destination": "/funny-wedding-hashtags.html",
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "weddinghashtagmaker.com"
+        }
+      ],
+      "destination": "https://www.weddinghashtagmaker.com/:path*",
       "permanent": true
     }
   ]
